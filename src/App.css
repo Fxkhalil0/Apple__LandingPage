@@ -4,7 +4,7 @@
   display: flex;
   background-color: #f7aaa4;
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .container {
@@ -63,4 +63,27 @@
 .page__content > p{
   color: #F6F5F1;
     font-size: 19px;
+}
+.last__content{
+  margin-top: 30px;
+}
+.last__content > p{
+  font-size: 22px;
+  text-align: center;
+  font-weight: 300;
+  color: #F6F5F1;
+  text-shadow: 1px 0px #dad8d7;
+}
+.engraving{
+  border: 1px solid red;
+  color: #F6F5F1;
+}
+.engraving > h3{
+  text-shadow: 1px 1px #dad8d7;
+  font-weight: 500;
+  font-size: 23px;
+}
+.feature{
+  display: flex;
+  justify-content: space-between;
 }
