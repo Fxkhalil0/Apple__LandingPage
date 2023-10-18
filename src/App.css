@@ -1,10 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 .App {
   display: flex;
-  background-color: brown;
+  background-color: #f7aaa4;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
 }
-.leftside__section{
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.leftside__section {
   width: 95%;
 }
-.leftside__section > img{
-fill: blue;
+
+.leftside__section nav {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  color: #F6F5F1;
+  padding-top: 13px;
+  padding-right: 80px;
+}
+
+.leftside__section nav>img {
+  width: 55px;
+  height: 48px;
+  margin-top: 25px;
+}
+
+.leftside__section nav>ul {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+  font-size: 20px;
+}
+
+.leftside__section nav>ul>li {
+  list-style: none;
+}
+.page__product{
+  display: flex;
+}
+.page__content{
+  width: 27%;
+  margin-top: 100px;
+}
+.page__content > h1{
+  color: white;
+  padding: 15px 20px;
+  background-color: #edaaa4;
+  font-size: 61px;
+  font-weight: 300;
+  border-radius: 20px;
+  text-shadow: 1px 1.5px #dad8d7;
+  box-shadow: 0px -2px 10px 0px #f9bdbcad , 0px 5px 10px 0px #e287849c;
+  border-top: 4px solid #f9bdbcad;
+  border-bottom: 4px solid #e287849c;
+}
+.page__content > p{
+  color: #F6F5F1;
+    font-size: 19px;
 }
