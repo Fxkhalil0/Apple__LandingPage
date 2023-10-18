@@ -29,6 +29,51 @@ function LeftSide() {
                     <div className="page__content">
                         <h1>AirPods Max</h1>
                         <p>Introducing AirPods Max - a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is here.</p>
+                        <div className="colors">
+                            <h4>colors</h4>
+                            <div className="color">
+                                <div className="colo">
+                                    <div className="circle">
+
+                                        <div className="red circl">
+
+                                        </div>
+                                    </div>
+                                    <div className="circle">
+
+                                        <div className="green circl">
+
+                                        </div>
+                                    </div>
+                                    <div className="circle">
+
+                                        <div className="black circl">
+
+                                        </div>
+                                    </div>
+                                    <div className="circle">
+
+                                        <div className="grey circl">
+
+                                        </div>
+                                    </div>
+                                    <div className="circle">
+
+                                        <div className="purple circl">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div className="text">
+                                <h4>lorem</h4>
+                                <h2>$549</h2>
+                                <a>buy</a>
+
+                            </div>
+                        </div>
                         <div className="last__content">
                             <p>Personalize them for free</p>
                             <div className="engraving">
