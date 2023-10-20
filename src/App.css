@@ -113,6 +113,9 @@
   left: 0;
   top: 0;
   background-color: rgba(149, 62, 62, 0.174);
+  border-radius: 15px;
+  box-shadow: 0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c;
+  border-bottom: 4px solid #e287849c;
 }
 .colors > .item:hover::after{
   width: 100%;
@@ -293,7 +296,7 @@
 .engraving::after {
   content: '';
   position: absolute;
-  height: 95%;
+  height: 93%;
   width: 98%;
   top: 4px;
   left: 5px;
@@ -314,9 +317,9 @@
 .no__engraving::after {
   content: '';
   position: absolute;
-  height: 88%;
+  height: 87%;
   width: 98%;
-  top: 4px;
+  top: 5px;
   left: 5px;
   background-color: transparent;
   border-radius: 10px;
