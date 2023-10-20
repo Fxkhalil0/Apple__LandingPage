@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <div className="leftside__section">
-        <div className="container">
+        {/* <div className="container"> */}
           <nav>
             <img src={NavLogo} alt="" />
             <ul>
@@ -117,8 +117,8 @@ function App() {
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'contain',
-                    width: '700px',
-                    height: '700px',
+                    width: '650px',
+                    height: '650px',
                     filter: 'drop-shadow(5px 1px 30px #BC7F86)'
                   }}
                 >
@@ -171,7 +171,6 @@ function App() {
             }
           </div>
         </div>
-      </div>
       <div className="rightside__section">
         <div className="padding">
           <div className="right__icons">
@@ -184,6 +183,7 @@ function App() {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </div>
   );
 }

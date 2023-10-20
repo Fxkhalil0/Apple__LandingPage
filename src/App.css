@@ -4,15 +4,16 @@
   display: flex;
   background-color: #f7aaa4;
   font-family: 'Poppins', sans-serif;
-  /* height: 100vh; */
+  height: 100vh;
 }
 .container {
-  width: 93.5%;
+  width: 91.5%;
   margin: 0 auto;
 }
 
 .leftside__section {
-  width: 95%;
+  width: 90%;
+  padding-left: 50px;
 }
 
 .leftside__section nav {
@@ -33,7 +34,7 @@
 .leftside__section nav>ul {
   display: flex;
   align-items: center;
-  gap: 115px;
+  gap: 96px;
   font-size: 20px;
 }
 
@@ -55,7 +56,7 @@
   padding: 0px 20px;
   width: fit-content;
   background-color: #edaaa4;
-  font-size: 53px;
+  font-size: 51px;
   font-weight: 300;
   border-radius: 20px;
   text-shadow: 1px 1.5px #dad8d7;
@@ -67,7 +68,7 @@
 
 .page__content>p {
   color: #F6F5F1;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .page__content>h3 {
@@ -378,33 +379,35 @@
 
 .page__image .girl {
   position: absolute;
-  width: 300px;
+  width: 350px;
   left: 130px;
-  top: 75px;
+  top: 40px;
 }
 
 .page__image .head {
   position: absolute;
   width: 250px;
   transform: rotate(30deg);
-  left: 500px;
-  top: 100px;
+  left: 530px;
+  top: 130px;
 }
 
 .rightside__section {
   width: 6.5%;
   background-color: #F9BDBD;
-  min-height: 100vh;
+  height: 100vh;
 }
 .padding {
   padding: 30px 20px;
+  height: 87vh;
 }
 
 .right__icons {
   display: flex;
   flex-direction: column;
-  gap: 570px;
-  justify-content: center;
+  height: 100%;
+
+  justify-content: space-between;
   align-items: center;
   color: #F6F5F1;
 }
