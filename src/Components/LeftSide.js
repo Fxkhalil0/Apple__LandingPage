@@ -1,11 +1,24 @@
 import React, { useState } from "react";
 import NavLogo from '../assets/navlogo.png'
 import pinklogo from '../assets/png/pinklogo.png'
-
+import mintlogo from '../assets/png/mintlogo.png'
+import blacklogo from '../assets/png/blacklogo.png'
+import bluelogo from '../assets/png/bluelogo.png'
+import whitelogo from '../assets/navlogo.png'
+import redgirl from '../assets/png/redheadgirl.png'
+import mintgirl from '../assets/png/mintgreenheadgirl.png'
+import blackgirl from '../assets/png/blackheadgirl.png'
+import whitegirl from '../assets/png/whiteheadgirl.png'
+import bluegirl from '../assets/png/blackheadgirl.png'
+import sideredhead from '../assets/png/sideredhead.png'
+import sideminthead from '../assets/png/sideminthead.png'
+import sideblackhead from '../assets/png/sideblackhead.png'
+import sidewhitehead from '../assets/png/sidewhitehead.png'
+import sidebluehead from '../assets/png/sidebluehead.png'
 
 
 function LeftSide() {
-    const [color, setColor] = useState("")
+    const [color, setColor] = useState("red")
     return (
         <div className="leftside__section">
             <div className="container">
@@ -93,7 +106,46 @@ function LeftSide() {
                         </div>
                     </div>
                     <div className="page__image">
-                        <img style={{width:"600px"}} src={pinklogo} alt="" />
+                        {
+                            color === "red" &&
+                            <>
+                                <img style={{ width: "600px" }} src={pinklogo} alt="" />
+                                <img className="girl" src={redgirl} alt="" />
+                                <img className="head" src={sideredhead} alt="" />
+                            </>
+                        }
+                        {
+                            color === "mint" &&
+                            <>
+                                <img style={{ width: "600px" }} src={mintlogo} alt="" />
+                                <img className="girl" src={mintgirl} alt="" />
+                                <img className="head" src={sideminthead} alt="" />
+                            </>
+                        }
+                        {
+                            color === "black" &&
+                            <>
+                                <img style={{ width: "600px" }} src={blacklogo} alt="" />
+                                <img className="girl" src={blackgirl} alt="" />
+                                <img className="head" src={sideblackhead} alt="" />
+                            </>
+                        }
+                        {
+                            color === "white" &&
+                            <>
+                                <img style={{ width: "600px" }} src={whitelogo} alt="" />
+                                <img className="girl" src={whitegirl} alt="" />
+                                <img className="head" src={sidewhitehead} alt="" />
+                            </>
+                        }
+                        {
+                            color === "blue" &&
+                            <>
+                                <img style={{ width: "600px" }} src={bluelogo} alt="" />
+                                <img className="girl" src={bluegirl} alt="" />
+                                <img className="head" src={sidebluehead} alt="" />
+                            </>
+                        }
                     </div>
                 </div>
             </div>

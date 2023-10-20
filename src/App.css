@@ -361,9 +361,23 @@
   margin: 0;
 }
 .page__image{
-  width: 74%;
-  margin-left: -50px;
+  width: 74.5%;
+  /* margin-left: -50px; */
+  position: relative;
 }
 .page__image > img{
   filter: drop-shadow(5px 1px 30px #BC7F86);
+}
+.page__image .girl{
+  position: absolute;
+  width: 300px;
+  left: 130px;
+  top: 75px;
+}
+.page__image .head{
+  position: absolute;
+  width: 250px;
+  transform: rotate(30deg);
+  left: 500px;
+  top: 100px;
 }
