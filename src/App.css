@@ -47,44 +47,47 @@
 }
 
 .page__content {
-  width: 32%;
-  margin-top: 70px;
+  width: 26%;
+  margin-top: 20px;
 }
 
 .page__content>h1 {
   color: white;
-  padding: 15px 20px;
+  padding: 0px 20px;
   width: fit-content;
   background-color: #edaaa4;
-  font-size: 70px;
+  font-size: 53px;
   font-weight: 300;
   border-radius: 20px;
   text-shadow: 1px 1.5px #dad8d7;
   box-shadow: 0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c;
   border-top: 4px solid #f9bdbcad;
   border-bottom: 4px solid #e287849c;
+  margin: 0;
 }
 
 .page__content>p {
   color: #F6F5F1;
-  font-size: 19px;
+  font-size: 16px;
 }
 
 .page__content>h3 {
-  margin-top: 50px;
+  margin: 25px 0 0 0;
   color: #F6F5F1;
   text-shadow: 1px 1px #dad8d7;
   font-weight: 500;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .product__colors {
   position: relative;
+  width: 87%;
   border-radius: 15px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 12px;
   border-top: 6px solid #f5bcb8;
   border-left: 6px solid #f5bcb8;
+  margin-bottom: 32px;
 }
 
 .colors {
@@ -96,9 +99,9 @@
 }
 
 .colors>.item {
-  width: 25%;
-  padding: 10px;
-  margin-bottom: 15px;
+  width: 23%;
+  padding: 9px;
+  margin-bottom: -8px;
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -120,6 +123,9 @@
 .colors > .item:hover::after{
   width: 100%;
 }
+.colors > .item.active::after{
+  width: 100%;
+}
 
 .product__colors>.price {
   position: absolute;
@@ -127,19 +133,21 @@
   height: 84px;
   line-height: 5px;
   text-align: center;
-  bottom: 0;
+  top: 57%;
   right: 0;
   color: #F6F5F1;
   background-color: #f7aaa4;
 }
 
 .product__colors>.price>p {
-  padding-right: 24px;
+  padding-right: 50px;
+  font-size: 10px;
 }
 
 .product__colors>.price>h3 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
+  margin: 15px 0 15px;
 }
 
 .product__colors>.price>button {
@@ -155,7 +163,7 @@
   height: 20px;
   /* background-color: blue; */
   position: absolute;
-  top: 80px;
+  top: 53px;
   right: 1px;
   border-right: 6px solid #f5bcb8;
   border-bottom: 6px solid #f5bcb8;
@@ -167,8 +175,8 @@
   height: 20px;
   /* background-color: blue; */
   position: absolute;
-  top: 100px;
-  right: 105px;
+  top: 74px;
+  right: 88px;
   border-left: 6px solid #f5bcb8;
   border-top: 6px solid #f5bcb8;
   border-top-left-radius: 15px;
@@ -179,8 +187,8 @@
   height: 20px;
   /* background-color: blue; */
   position: absolute;
-  bottom: 0;
-  right: 124px;
+  bottom: -17px;
+  right: 108px;
   border-right: 6px solid #f5bcb8;
   border-bottom: 6px solid #f5bcb8;
   border-bottom-right-radius: 15px;
@@ -191,7 +199,7 @@
   height: 20px;
   /* background-color: blue; */
   position: absolute;
-  bottom: 0px;
+  bottom: -17px;
   left: -5px;
   border-left: 6px solid #f5bcb8;
   border-bottom: 6px solid #f5bcb8;
@@ -210,9 +218,9 @@
 .product__colors::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -17px;
   left: 20px;
-  width: 67%;
+  width: 52%;
   border-bottom: 6px solid #f5bcb8;
 }
 
@@ -221,16 +229,16 @@
   position: absolute;
   top: -5px;
   right: 26px;
-  width: 63%;
+  width: 68%;
   border-top: 6px solid #f5bcb8;
 }
 
 .price::before {
   content: '';
   position: absolute;
-  top: 8px;
-  right: 124px;
-  height: 75%;
+  top: 18px;
+  right: 108px;
+  height: 40%;
   border-left: 6px solid #f5bcb8;
 }
 
@@ -272,7 +280,7 @@
 }
 
 .last__content {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .last__content>p {
@@ -281,7 +289,7 @@
   font-weight: 300;
   color: #F6F5F1;
   text-shadow: 1px 0px #dad8d7;
-  margin-bottom: 5px;
+  margin: 0;
 }
 
 .engraving {
@@ -290,7 +298,7 @@
   position: relative;
   border-radius: 15px;
   box-shadow: -5px -5px 9px #d9a0979e, 5px 5px 9px rgb(94 104 121 / 4%);
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .engraving::after {
@@ -336,7 +344,7 @@
   font-size: 18px;
 }
 .engraving h3{
-  margin-bottom: 0px;
+  margin: 5px 0;
 }
 .feature {
   display: flex;
@@ -344,9 +352,18 @@
   align-items: center;
 }
 .feature > p{
-  font-size: 15px;
-  padding-right: 30px;
+  font-size: 10px;
+  padding-right: 21px;
+  margin: 3px 0 ;
 }
 .feature > h4{
   font-size: 18px;
+  margin: 0;
+}
+.page__image{
+  width: 74%;
+  margin-left: -50px;
+}
+.page__image > img{
+  filter: drop-shadow(5px 1px 30px #BC7F86);
 }

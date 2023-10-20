@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import NavLogo from '../assets/navlogo.png'
+import pinklogo from '../assets/png/pinklogo.png'
 
 
 
 function LeftSide() {
+    const [color, setColor] = useState("")
     return (
         <div className="leftside__section">
             <div className="container">
@@ -26,42 +28,52 @@ function LeftSide() {
                         <h1>AirPods Max</h1>
                         <p>Introducing AirPods Max - a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is here.</p>
                         <h3>Colors</h3>
-                            <div className="product__colors">
-                                <div className="colors">
-                                    <div className="item">
-                                        <p className="circle red-circle-half"></p>
-                                    </div>
-                                    <div className="item">
-                                        <p className="circle mint-circle-half"></p>
-                                    </div>
-                                    <div className="item">
-                                        <p className="circle black-circle-half"></p>
-                                    </div>
-                                    <div className="item">
-                                        <p className="circle white-circle-half"></p>
-                                    </div>
-                                    <div className="item">
-                                        <p className="circle blue-circle-half"></p>
-                                    </div>
+                        <div className="product__colors">
+                            <div className="colors">
+                                <div className={`item ${color === "red" ? "active" : ""}`} onClick={() => {
+                                    setColor("red")
+                                }}>
+                                    <p className="circle red-circle-half"></p>
                                 </div>
-                                <div className="price">
-                                    <p>Price</p>
-                                    <h3>$549</h3>
-                                    <button>Buy</button>
+                                <div onClick={() => {
+                                    setColor("mint")
+                                }} className={`item ${color === "mint" ? "active" : ""}`}>
+                                    <p className="circle mint-circle-half"></p>
                                 </div>
-                                <div className="icon">
-
+                                <div onClick={() => {
+                                    setColor("black")
+                                }} className={`item ${color === "black" ? "active" : ""}`}>
+                                    <p className="circle black-circle-half"></p>
                                 </div>
-                                <div className="inside__icon">
-
+                                <div onClick={() => {
+                                    setColor("white")
+                                }} className={`item ${color === "white" ? "active" : ""}`}>
+                                    <p className="circle white-circle-half"></p>
                                 </div>
-                                <div className="last__right__icon">
-
-                                </div>
-                                <div className="last__left__icon">
-
+                                <div onClick={() => {
+                                    setColor("blue")
+                                }} className={`item ${color === "blue" ? "active" : ""}`}>
+                                    <p className="circle blue-circle-half"></p>
                                 </div>
                             </div>
+                            <div className="price">
+                                <p>Price</p>
+                                <h3>$549</h3>
+                                <button>Buy</button>
+                            </div>
+                            <div className="icon">
+
+                            </div>
+                            <div className="inside__icon">
+
+                            </div>
+                            <div className="last__right__icon">
+
+                            </div>
+                            <div className="last__left__icon">
+
+                            </div>
+                        </div>
                         <div className="last__content">
                             <p>Personalize them for free</p>
                             <div className="engraving">
@@ -81,7 +93,7 @@ function LeftSide() {
                         </div>
                     </div>
                     <div className="page__image">
-
+                        <img style={{width:"600px"}} src={pinklogo} alt="" />
                     </div>
                 </div>
             </div>
