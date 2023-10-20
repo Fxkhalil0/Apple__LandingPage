@@ -4,12 +4,11 @@
   display: flex;
   background-color: #f7aaa4;
   font-family: 'Poppins', sans-serif;
-  min-height: 100vh;
   /* height: 100vh; */
 }
 
 .container {
-  width: 95%;
+  width: 93.5%;
   margin: 0 auto;
 }
 
@@ -109,7 +108,8 @@
   position: relative;
   cursor: pointer;
 }
-.colors > .item::after{
+
+.colors>.item::after {
   position: absolute;
   content: "";
   width: 0;
@@ -121,10 +121,12 @@
   box-shadow: 0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c;
   border-bottom: 4px solid #e287849c;
 }
-.colors > .item:hover::after{
+
+.colors>.item:hover::after {
   width: 100%;
 }
-.colors > .item.active::after{
+
+.colors>.item.active::after {
   width: 100%;
 }
 
@@ -344,41 +346,75 @@
   font-weight: 500;
   font-size: 18px;
 }
-.engraving h3{
+
+.engraving h3 {
   margin: 5px 0;
 }
+
 .feature {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.feature > p{
+
+.feature>p {
   font-size: 10px;
   padding-right: 21px;
-  margin: 3px 0 ;
+  margin: 3px 0;
 }
-.feature > h4{
+
+.feature>h4 {
   font-size: 18px;
   margin: 0;
 }
-.page__image{
+
+/* .page__image{
   width: 74.5%;
-  /* margin-left: -50px; */
+  margin-left: -50px; 
   position: relative;
-}
-.page__image > img{
+} */
+.page__image>img {
   filter: drop-shadow(5px 1px 30px #BC7F86);
 }
-.page__image .girl{
+
+.page__image .girl {
   position: absolute;
   width: 300px;
   left: 130px;
   top: 75px;
 }
-.page__image .head{
+
+.page__image .head {
   position: absolute;
   width: 250px;
   transform: rotate(30deg);
   left: 500px;
   top: 100px;
+}
+
+.rightside__section {
+  width: 6.5%;
+  background-color: #F9BDBD;
+  min-height: 100vh;
+}
+.padding {
+  padding: 30px 20px;
+}
+
+.right__icons {
+  display: flex;
+  flex-direction: column;
+  gap: 570px;
+  justify-content: center;
+  align-items: center;
+  color: #F6F5F1;
+}
+.right__icons>img {
+  width: 53%;
+}
+.bottom__icon{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-size: 25px;
 }
