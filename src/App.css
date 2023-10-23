@@ -383,6 +383,16 @@
   left: 130px;
   top: 40px;
 }
+.page__image .circle{
+  position: absolute;
+  bottom: 10px;
+  left: 300px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #f5bcb8;
+  box-shadow: rgba(0, 0, 0, 0.6) 9px 34px 39px 56px;
+}
 
 .page__image .head {
   position: absolute;
@@ -420,4 +430,28 @@
   flex-direction: column;
   gap: 35px;
   font-size: 25px;
+}
+.page__image .small__images{
+  position: absolute;
+  top: 480px;
+  left: 640px;
+  text-align: center;
+}
+.page__image .small__images h3{
+  color: white;
+  font-size: 18px;
+}
+.page__image .small__images .images{
+  display: flex ;
+  width: 300px;
+  justify-content: space-between;
+}
+.page__image .small__images .images .usb{
+  width: 21%;
+}
+.page__image .small__images .images .grab{
+  width: 28%;
+}
+.page__image .small__images .images .headd{
+  width: 24%;
 }
