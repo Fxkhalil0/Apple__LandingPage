@@ -62,8 +62,8 @@
   border-radius: 20px;
   text-shadow: 1px 1.5px #dad8d7;
   /* box-shadow: 0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c; */
-  border-top: 4px solid #f9bdbcad;
-  border-bottom: 4px solid #e287849c;
+  /* border-top: 4px solid #f9bdbcad; */
+  /* border-bottom: 4px solid #e287849c; */
   margin: 0;
 }
 
@@ -85,7 +85,7 @@
   width: 87%;
   border-radius: 15px;
   border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 0px;
   border-top: 6px solid #f5bcb8;
   border-left: 6px solid #f5bcb8;
   margin-bottom: 32px;
@@ -167,7 +167,7 @@
   height: 20px;
   /* background-color: blue; */
   position: absolute;
-  top: 53px;
+  top: 54px;
   right: 1px;
   border-right: 6px solid #f5bcb8;
   border-bottom: 6px solid #f5bcb8;
@@ -204,7 +204,7 @@
   /* background-color: blue; */
   position: absolute;
   bottom: -17px;
-  left: -5px;
+  left: -6px;
   border-left: 6px solid #f5bcb8;
   border-bottom: 6px solid #f5bcb8;
   border-bottom-left-radius: 15px;

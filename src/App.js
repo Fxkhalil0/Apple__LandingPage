@@ -58,7 +58,9 @@ function App() {
             <h1 style={{
               color : color === "white" && "black",
               backgroundColor: color === "red" ? '#f7aaa4' : color === "mint" ? "#9ff4b7" : color === "white" ? "#f9f9f9" : color === "black" ? "#595959" : color === "blue" ? "#a1b3f4" : "",
-              boxShadow: color === "red" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "mint" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "white" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "black" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "blue" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : ""
+              boxShadow: color === "red" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "mint" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "white" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "black" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "blue" ? '0px -2px 10px 0px #2f536da1, 0px 5px 10px 0px #2f536d;' : "",
+              borderTop: color === "red" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "mint" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "white" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "black" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "blue" ? '4px solid rgb(47 83 109 / 19%)' : "",
+              borderBottom: color === "red" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "mint" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "white" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "black" ? '0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c' : color === "blue" ? '4px solid rgb(47 83 109 / 65%)' : ""
             }}>AirPods Max</h1>
             <p style={{color:color === "white" && "black"}}>Introducing AirPods Max - a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods. The ultimate personal listening experience is here.</p>
             <h3 style={{color:color === "white" && "black"}}>Colors</h3>
@@ -90,7 +92,7 @@ function App() {
                   <p className="circle blue-circle-half"></p>
                 </div>
               </div>
-              <div className="price" style={{ color:color === "white" && "black",backgroundColor: color === "red" ? '#f7aaa4' : color === "mint" ? "#9ff4b7" : color === "white" ? "#f9f9f9" : color === "black" ? "#595959" : color === "blue" ? "#a1b3f4" : "" }}>
+              <div className="price" style={{ color:color === "white" && "black",backgroundColor: color === "red" ? '#f7aaa4' : color === "mint" ? "#9ff4b7" : color === "white" ? "#f9f9f9" : color === "black" ? "#595959" : color === "blue" ? "rgb(139, 152, 200)" : "" }}>
                 <p>Price</p>
                 <h3>$549</h3>
                 <button>Buy</button>
@@ -111,6 +113,7 @@ function App() {
             <div className="last__content">
               <p style={{color:color === "white" && "black"}}>Personalize them for free</p>
               <div style={{color:color === "white" && "black"}} className="engraving">
+              {/*blue boxShadow -5px -5px 9px #92a8bdb0, 5px 5px 9px #2f536d80; */}
                 <div className="padding__div">
                   <h3 >Add Engraving</h3>
                   <div className="feature">
@@ -231,7 +234,7 @@ function App() {
 
                 }}
               >
-                <img style={{ width: "650px", filter: 'drop-shadow(5px 1px 30px #BC7F86)' }} src={bluelogo} alt="" />
+                <img style={{ width: "650px", filter: 'drop-shadow(5px 1px 30px #365874)' }} src={bluelogo} alt="" />
                 {/* <img className="girl" src={redgirl} alt="" /> */}
                 <img className="head" src={sidebluehead} alt="" />
                 <img className="circle" src={circle} alt="" />
