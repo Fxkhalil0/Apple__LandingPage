@@ -36,7 +36,7 @@ function App() {
   const [color, setColor] = useState("red")
 
   return (
-    <div className="App" style={{ backgroundColor: color === "red" ? '#f7aaa4' : color === "mint" ? "#9ff4b7" : color === "white" ? "#f9f9f9" : color === "black" ? "#595959" : color === "blue" ? "#a1b3f4" : "" }}>
+    <div className="App" style={{ backgroundColor: color === "red" ? '#f7aaa4' : color === "mint" ? "#9ff4b7" : color === "white" ? "#f9f9f9" : color === "black" ? "#595959" : color === "blue" ? "rgb(139 152 200)" : "" }}>
       <div className="leftside__section">
         {/* <div className="container"> */}
         <nav style={{color:color === "white" && "black"}}>
@@ -239,7 +239,7 @@ function App() {
                 <h3>what's in the box</h3>
                 <div className='images'>
                   <img className="headd" src={bluehead} alt="" />
-                  <img className="grab" src={blackgrap} alt="" />
+                  <img className="grab" src={bluegrap} alt="" />
                   <img className="usb" src={usb} alt="" />
                 </div>
               </div>
@@ -248,7 +248,7 @@ function App() {
           }
         </div>
       </div>
-      <div className="rightside__section" style={{ backgroundColor: color === "red" ? '#F9BDBD' : color === "mint" ? "#c4fcd3" : color === "white" ? "#fff" : color === "black" ? "#000" : color === "blue" ? "#ced9ff" : "" }}>
+      <div className="rightside__section" style={{ backgroundColor: color === "red" ? '#F9BDBD' : color === "mint" ? "#c4fcd3" : color === "white" ? "#fff" : color === "black" ? "#000" : color === "blue" ? "rgb(180 193 237)" : "" }}>
         <div className="padding">
           <div className="right__icons">
             {
