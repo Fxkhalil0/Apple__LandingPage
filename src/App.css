@@ -2,10 +2,11 @@
 
 .App {
   display: flex;
-  
+
   font-family: 'Poppins', sans-serif;
   height: 100vh;
 }
+
 .container {
   width: 91.5%;
   margin: 0 auto;
@@ -383,7 +384,8 @@
   left: 130px;
   top: 40px;
 }
-.page__image .circle{
+
+.page__image .circle {
   position: absolute;
   bottom: 10px;
   left: 300px;
@@ -396,10 +398,10 @@
 
 .page__image .head {
   position: absolute;
-  width: 270px;
+  width: 315px;
   transform: rotate(30deg);
-  left: 550px;
-  top: 130px;
+  left: 601px;
+  top: 71px;
   filter: drop-shadow(5px 1px 30px #2f2c2c);
 }
 
@@ -408,6 +410,7 @@
   /* background-color: #F9BDBD; */
   height: 100vh;
 }
+
 .padding {
   padding: 30px 20px;
   height: 87vh;
@@ -422,36 +425,44 @@
   align-items: center;
   color: #F6F5F1;
 }
+
 .right__icons>img {
   width: 53%;
 }
-.bottom__icon{
+
+.bottom__icon {
   display: flex;
   flex-direction: column;
   gap: 35px;
   font-size: 25px;
 }
-.page__image .small__images{
+
+.page__image .small__images {
   position: absolute;
   top: 480px;
   left: 640px;
   text-align: center;
 }
-.page__image .small__images h3{
+
+.page__image .small__images h3 {
   color: white;
   font-size: 18px;
 }
-.page__image .small__images .images{
-  display: flex ;
+
+.page__image .small__images .images {
+  display: flex;
   width: 300px;
   justify-content: space-between;
 }
-.page__image .small__images .images .usb{
+
+.page__image .small__images .images .usb {
   width: 21%;
 }
-.page__image .small__images .images .grab{
+
+.page__image .small__images .images .grab {
   width: 28%;
 }
-.page__image .small__images .images .headd{
+
+.page__image .small__images .images .headd {
   width: 24%;
 }
