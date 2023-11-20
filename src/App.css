@@ -314,7 +314,7 @@
   left: 5px;
   background-color: transparent;
   border-radius: 10px;
-  box-shadow: inset -5px -5px 9px #d9a0979e, inset 5px 5px 9px #59575a12;
+  /* box-shadow: inset -5px -5px 9px #d9a0979e, inset 5px 5px 9px #59575a12; */
 }
 
 .no__engraving {
