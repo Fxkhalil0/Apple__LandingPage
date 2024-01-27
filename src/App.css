@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
 .App {
   display: flex;
 
@@ -110,7 +111,7 @@
   cursor: pointer;
 }
 
-.colors>.item::after {
+/* .colors>.item::after {
   position: absolute;
   content: "";
   width: 0;
@@ -121,7 +122,7 @@
   border-radius: 15px;
   box-shadow: 0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c;
   border-bottom: 4px solid #e287849c;
-}
+} */
 
 .colors>.item:hover::after {
   width: 100%;
@@ -210,41 +211,41 @@
   border-bottom-left-radius: 15px;
 }
 
-.product__colors::after {
+/* .product__colors::after {
   content: '';
   position: absolute;
   top: 3px;
   right: 1px;
   height: 44%;
   border-right: 6px solid #f5bcb8;
-}
+} */
 
-.product__colors::before {
+/* .product__colors::before {
   content: '';
   position: absolute;
   bottom: -17px;
   left: 20px;
   width: 52%;
   border-bottom: 6px solid #f5bcb8;
-}
+} */
 
-.price::after {
+/* .price::after {
   content: '';
   position: absolute;
   top: -5px;
   right: 26px;
   width: 68%;
   border-top: 6px solid #f5bcb8;
-}
+} */
 
-.price::before {
+/* .price::before {
   content: '';
   position: absolute;
   top: 18px;
   right: 108px;
   height: 40%;
   border-left: 6px solid #f5bcb8;
-}
+} */
 
 .circle {
   width: 20px;
@@ -305,7 +306,7 @@
   margin-bottom: 5px;
 }
 
-.engraving::after {
+/* .engraving::after {
   content: '';
   position: absolute;
   height: 93%;
@@ -314,8 +315,8 @@
   left: 5px;
   background-color: transparent;
   border-radius: 10px;
-  /* box-shadow: inset -5px -5px 9px #d9a0979e, inset 5px 5px 9px #59575a12; */
-}
+  box-shadow: inset -5px -5px 9px #d9a0979e, inset 5px 5px 9px #59575a12;
+} */
 
 .no__engraving {
   color: #F6F5F1;
@@ -326,7 +327,7 @@
   margin-bottom: 15px;
 }
 
-.no__engraving::after {
+/* .no__engraving::after {
   content: '';
   position: absolute;
   height: 87%;
@@ -336,7 +337,7 @@
   background-color: transparent;
   border-radius: 10px;
   box-shadow: inset -5px -5px 9px #d9a0979e, inset 5px 5px 9px #59575a12;
-}
+} */
 
 .padding__div {
   padding: 5px 20px;
