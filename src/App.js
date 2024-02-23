@@ -40,10 +40,10 @@ function App() {
     height: "100%",
     left: "0",
     top: "0",
-    backgroundColor: color === "red"?"rgba(149, 62, 62, 0.174)":"black",
+    backgroundColor: color === "red"?"rgba(149, 62, 62, 0.174)": color === "mint"?"rgb(52 83 47 / 16%)":color === "black"? "#00000017":color === "white"? "#b1aeae29":color === "blue"? "rgb(50 76 169 / 19%)":"",
     borderRadius: "15px",
     boxShadow: color === "red"?"0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c":"black",
-    borderBottom: color === "red"?"4px solid #e287849c":"black",
+    borderBottom: color === "red"?"4px solid #e287849c": color === "mint"?"4px solid rgb(52 83 47 / 16%)":color === "black"? "4px solid #0000004f":color === "white"? "4px solid #b1aeae6b": color === "blue"? "4px solid rgba(47, 83, 109, 0.65)":"",
   };
   const beforBroductColors = {
     content: '',
@@ -51,7 +51,7 @@ function App() {
   bottom: "-17px",
   left: "20px",
   width: "52%",
-  borderBottom: "6px solid #f5bcb8",
+  borderBottom: color === "red"? "6px solid #f5bcb8" : color === "mint"? "6px solid #8ccd9e": color === "white" ? "6px solid rgb(213 213 213)" : color === "black" ? "6px solid rgb(60 62 60)": color === "blue"? "6px solid rgba(47, 83, 109, 0.65)" :"",
   }
 const afterBroductColors = {
   content: '',
@@ -59,7 +59,7 @@ const afterBroductColors = {
   top: "3px",
   right: "1px",
   height: "44%",
-  borderRight: "6px solid #f5bcb8",
+  borderRight: color === "red"? "6px solid #f5bcb8" : color === "mint"? "6px solid #8ccd9e":color === "white" ? "6px solid rgb(213 213 213)" : color === "black" ? "6px solid rgb(60 62 60)" : color === "blue"? "6px solid rgba(47, 83, 109, 0.65)":"",
 }
 
 const afterPrice ={
@@ -68,7 +68,7 @@ const afterPrice ={
   top: "-5px",
   right: "26px",
   width: "68%",
-  borderTop: "6px solid #f5bcb8",
+  borderTop: color === "red"? "6px solid #f5bcb8" : color === "mint"? "6px solid #8ccd9e":color === "white" ? "6px solid rgb(213 213 213)" : color === "black" ? "6px solid rgb(60 62 60)" : color === "blue"? "6px solid rgba(47, 83, 109, 0.65)":"",
 }
 const beforePrice = {
   content: '',
@@ -76,7 +76,7 @@ const beforePrice = {
   top: "18px",
   right: "108px",
   height: "40%",
-  borderLeft: "6px solid #f5bcb8",
+  borderLeft: color === "red"? "6px solid #f5bcb8" : color === "mint"? "6px solid #8ccd9e":color === "white" ? "6px solid rgb(213 213 213)" : color === "black" ? "6px solid rgb(60 62 60)" : color === "blue"? "6px solid rgba(47, 83, 109, 0.65)":"",
 }
 const afterEngraving = {
   content: '',
@@ -97,7 +97,7 @@ const afterNoEngraving = {
   left: "5px",
   backgroundColor: "transparent",
   borderRadius: "10px",
-  boxShadow: "inset -5px -5px 9px #d9a0979e, inset 5px 5px 9px #59575a12",
+  boxShadow: color === "red"? "inset -5px -5px 9px #d9a0979e, inset 5px 5px 9px #59575a12" : color === "mint"? "rgb(101 179 125 / 62%) -5px -5px 9px inset, rgba(89, 87, 90, 0.07) 5px 5px 9px inset": color === "black"? "rgb(42 44 42 / 62%) -5px -5px 9px inset, rgba(89, 87, 90, 0.07) 5px 5px 9px inset": color === "white"?"rgb(182 182 182 / 62%) -5px -5px 9px inset, rgba(89, 87, 90, 0.07) 5px 5px 9px inset": color === "blue"? "#6386a8 -5px -5px 9px inset, rgba(89, 87, 90, 0.07) 5px 5px 9px inset":"",
 }
   return (
     <div
@@ -164,11 +164,11 @@ const afterNoEngraving = {
                   color === "red"
                     ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
                     : color === "mint"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "rgb(161 202 172 / 68%) 0px -2px 10px 0px, rgb(73 108 86 / 17%) 0px 5px 10px 0px"
                     : color === "white"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "rgb(139 139 139 / 68%) 0px -2px 10px 0px, rgb(131 131 131 / 61%) 0px 5px 10px 0px"
                     : color === "black"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "rgb(7 7 7 / 68%) 0px -2px 10px 0px, rgb(18 16 16 / 61%) 0px 5px 10px 0px"
                     : color === "blue"
                     ? "0px -2px 10px 0px #2f536da1, 0px 5px 10px 0px #2f536d"
                     : "",
@@ -176,11 +176,11 @@ const afterNoEngraving = {
                   color === "red"
                     ? "4px solid #f9bdbcad"
                     : color === "mint"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "4px solid #95e2abac"
                     : color === "white"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "4px solid rgb(158 158 158 / 68%)"
                     : color === "black"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "4px solid rgb(48 51 49 / 68%)"
                     : color === "blue"
                     ? "4px solid rgb(47 83 109 / 19%)"
                     : "",
@@ -188,11 +188,11 @@ const afterNoEngraving = {
                   color === "red"
                     ? "4px solid #e287849c"
                     : color === "mint"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "4px solid #9cd6ac"
                     : color === "white"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "4px solid rgb(158 158 158 / 68%)"
                     : color === "black"
-                    ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                    ? "4px solid rgb(56 59 57)"
                     : color === "blue"
                     ? "4px solid rgb(47 83 109 / 65%)"
                     : "",
@@ -206,7 +206,32 @@ const afterNoEngraving = {
               ultimate personal listening experience is here.
             </p>
             <h3 style={{ color: color === "white" && "black" }}>Colors</h3>
-            <div className="product__colors">
+            <div className="product__colors" style={{
+              borderTop:
+              color === "red"
+                ? "6px solid #f5bcb8"
+                : color === "mint"
+                ? "6px solid #8ccd9e"
+                : color === "white"
+                ? "6px solid rgb(213 213 213)"
+                : color === "black"
+                ? "6px solid rgb(60 62 60)"
+                : color === "blue"
+                ? "6px solid rgb(47 83 109 / 65%)"
+                : "",
+            borderLeft:
+              color === "red"
+                ? "6px solid #f5bcb8"
+                : color === "mint"
+                ? "6px solid #8ccd9e"
+                : color === "white"
+                ? "6px solid rgb(213 213 213)"
+                : color === "black"
+                ? "6px solid rgb(60 62 60)"
+                : color === "blue"
+                ? "6px solid rgb(47 83 109 / 65%)"
+                : "",
+            }}>
               <div style={beforBroductColors}></div>
               <div className="colors">
                 <div
@@ -311,11 +336,11 @@ const afterNoEngraving = {
                     color === "red"
                       ? "-5px -5px 9px #d9a0979e, 5px 5px 9px rgb(94 104 121 / 4%)"
                       : color === "mint"
-                      ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                      ? "rgb(126 202 147 / 68%) 0px -2px 10px 0px, rgb(67 149 113 / 81%) 0px 5px 10px 0px"
                       : color === "white"
-                      ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                      ? "rgb(187 187 187 / 68%) 0px -2px 10px 0px, rgb(128 128 128 / 61%) 0px 5px 10px 0px"
                       : color === "black"
-                      ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                      ? "rgb(33 32 32 / 68%) 0px -2px 10px 0px, rgb(0 0 0 / 61%) 0px 5px 10px 0px"
                       : color === "blue"
                       ? "-5px -5px 9px #92a8bdb0, 5px 5px 9px #2f536d80"
                       : "",
@@ -323,7 +348,9 @@ const afterNoEngraving = {
                     boxShadow:
                       color === "red"
                         ? "inset -5px -5px 9px #d9a0979e, inset 5px 5px 9px #59575a12"
-                        : "",
+                        : color === "mint"
+                        ? "rgb(101 179 125 / 62%) -5px -5px 9px inset, rgba(89, 87, 90, 0.07) 5px 5px 9px inset" 
+                        :"",
                   },
                 }}
                 className="engraving"
@@ -348,11 +375,11 @@ const afterNoEngraving = {
                     color === "red"
                       ? "-5px -5px 9px #d9a0979e, 5px 5px 9px rgb(94 104 121 / 4%)"
                       : color === "mint"
-                      ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                      ? "rgb(126 202 147 / 68%) 0px -2px 10px 0px, rgb(67 149 113 / 81%) 0px 5px 10px 0px"
                       : color === "white"
-                      ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                      ? "rgb(187 187 187 / 68%) 0px -2px 10px 0px, rgb(128 128 128 / 61%) 0px 5px 10px 0px"
                       : color === "black"
-                      ? "0px -2px 10px 0px #f9bdbcad, 0px 5px 10px 0px #e287849c"
+                      ? "rgb(33 32 32 / 68%) 0px -2px 10px 0px, rgb(0 0 0 / 61%) 0px 5px 10px 0px"
                       : color === "blue"
                       ? "-5px -5px 9px #92a8bdb0, 5px 5px 9px #2f536d80"
                       : "",
@@ -406,7 +433,7 @@ const afterNoEngraving = {
                 <img
                   style={{
                     width: "650px",
-                    filter: "drop-shadow(5px 1px 30px #BC7F86)",
+                    filter: "drop-shadow(rgb(123, 123, 123) 5px 1px 30px)",
                   }}
                   src={mintlogo}
                   alt=""
@@ -436,7 +463,7 @@ const afterNoEngraving = {
                 <img
                   style={{
                     width: "650px",
-                    filter: "drop-shadow(5px 1px 30px #BC7F86)",
+                    filter: "drop-shadow(rgb(115, 115, 115) 5px 1px 30px)",
                   }}
                   src={blacklogo}
                   alt=""
@@ -466,7 +493,7 @@ const afterNoEngraving = {
                 <img
                   style={{
                     width: "650px",
-                    filter: "drop-shadow(5px 1px 30px #BC7F86)",
+                    filter: "drop-shadow(rgb(171 171 171) 5px 1px 30px)",
                   }}
                   src={whitelogo}
                   alt=""

@@ -261,19 +261,19 @@
 
   &.mint-circle-half {
     background-image:
-      linear-gradient(-180deg, #B0C0AB 50%, transparent 50%),
+      linear-gradient(-180deg, #809779 50%, transparent 50%),
       linear-gradient(360deg, #E6ECE0 50%, transparent 50%);
   }
 
   &.black-circle-half {
     background-image:
       linear-gradient(-180deg, #3B3B39 50%, transparent 50%),
-      linear-gradient(360deg, #59575A 50%, transparent 50%);
+      linear-gradient(360deg, #4a474b 50%, transparent 50%);
   }
 
   &.white-circle-half {
     background-image:
-      linear-gradient(-180deg, #F6F5F1 50%, transparent 50%),
+      linear-gradient(-180deg, #ffffff 50%, transparent 50%),
       linear-gradient(360deg, #D2D3D5 50%, transparent 50%);
   }
 
@@ -407,7 +407,7 @@
 }
 
 .rightside__section {
-  width: 6.5%;
+  width: 7.5%;
   /* background-color: #F9BDBD; */
   height: 100vh;
 }
